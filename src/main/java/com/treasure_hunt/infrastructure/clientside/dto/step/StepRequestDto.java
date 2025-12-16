@@ -10,5 +10,5 @@ public record StepRequestDto(
         Integer previousStepId,
         Double longitude,
         Double latitude,
-        Double altitude) {
+        Double radius) {
 }

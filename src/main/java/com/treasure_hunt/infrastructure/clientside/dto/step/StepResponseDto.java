@@ -12,7 +12,7 @@ public record StepResponseDto(
         StepResponseDto previousStep,
         Double longitude,
         Double latitude,
-        Double altitude,
+        Double radius,
         Boolean valid
 ) {
 }

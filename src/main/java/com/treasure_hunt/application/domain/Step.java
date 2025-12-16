@@ -17,6 +17,6 @@ public class Step {
     private Step previousStep;
     private Double longitude;
     private Double latitude;
-    private Double altitude;
+    private Double radius;
     private Boolean valid;
 }

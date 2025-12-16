@@ -25,7 +25,7 @@ public class StepEntity {
     private Integer stepNumber;
     private Double longitude;
     private Double latitude;
-    private Double altitude;
+    private Double radius;
     private Boolean valid;
 
     public StepEntity() {
@@ -87,12 +87,12 @@ public class StepEntity {
         this.latitude = latitude;
     }
 
-    public Double getAltitude() {
-        return altitude;
+    public Double getRadius() {
+        return radius;
     }
 
-    public void setAltitude(Double altitude) {
-        this.altitude = altitude;
+    public void setRadius(Double radius) {
+        this.radius = radius;
     }
 
     public Boolean getValid() {

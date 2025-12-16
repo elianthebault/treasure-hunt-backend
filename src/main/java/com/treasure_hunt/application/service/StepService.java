@@ -107,8 +107,8 @@ public class StepService implements StepUseCase {
             throw new StepException("Longitude is null.");
         if (step.getLatitude() == null)
             throw new StepException("Latitude is null.");
-        if (step.getAltitude() == null)
-            throw new StepException("Altitude is null.");
+        if (step.getRadius() == null)
+            throw new StepException("Radius is null.");
     }
 
     private void compareStep(Step stepToUpdate, Step newStep) {
@@ -118,8 +118,8 @@ public class StepService implements StepUseCase {
         if (newStep.getLatitude() != null
                 && !newStep.getLatitude().equals(stepToUpdate.getLatitude()))
             stepToUpdate.setLatitude(newStep.getLatitude());
-        if (newStep.getAltitude() != null
-                && !newStep.getAltitude().equals(stepToUpdate.getAltitude()))
-            stepToUpdate.setAltitude(newStep.getAltitude());
+        if (newStep.getRadius() != null
+                && !newStep.getRadius().equals(stepToUpdate.getRadius()))
+            stepToUpdate.setRadius(newStep.getRadius());
     }
 }
